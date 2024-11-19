@@ -1,0 +1,8 @@
+services:
+  sign_app:
+    container_name: project
+    image: sign_app
+    build: ./project/
+    restart: always
+    volumes:
+    - ./project:/app
